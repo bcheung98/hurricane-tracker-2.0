@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material"
+import { Box, AppBar, CardHeader, Avatar, Typography } from "@mui/material"
 
 const App = () => {
 
@@ -13,23 +13,30 @@ const App = () => {
 				position: "relative"
 			}}
 		>
-			<Box
+			<AppBar position="static"
 				sx={{
-					textAlign: "center",
-					postion: "absolute",
-					top: "50%",
-					left: "50%",
-					transform: "translate(40%, 255%)",
-					color: "white",
-					backgroundColor: "rgba(32, 32, 32, 0.5)",
-					border: "2px solid silver",
-					borderRadius: "5px",
-					padding: "35px",
-					width: "50vw"
+					borderBottom: "2px solid white"
 				}}
 			>
-				<Typography variant="h2" fontWeight="bold">Hurricane Tracker</Typography>
-			</Box>
+				<CardHeader
+					avatar={
+						null
+					}
+					title={
+						<Typography variant="h5"
+							sx={{
+								mr: 2,
+								display: { xs: "none", md: "flex" },
+								letterSpacing: ".3rem",
+								color: "white",
+								fontWeight: "bold",
+							}}
+						>
+							Hurricane Tracker
+						</Typography>
+					}
+				/>
+			</AppBar>
 		</Box>
 	)
 
