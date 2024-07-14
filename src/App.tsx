@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+import { Box, Typography } from "@mui/material"
 
 const App = () => {
 
@@ -13,6 +13,23 @@ const App = () => {
 				position: "relative"
 			}}
 		>
+			<Box
+				sx={{
+					textAlign: "center",
+					postion: "absolute",
+					top: "50%",
+					left: "50%",
+					transform: "translate(40%, 255%)",
+					color: "white",
+					backgroundColor: "rgba(32, 32, 32, 0.5)",
+					border: "2px solid silver",
+					borderRadius: "5px",
+					padding: "35px",
+					width: "50vw"
+				}}
+			>
+				<Typography variant="h2" fontWeight="bold">Hurricane Tracker</Typography>
+			</Box>
 		</Box>
 	)
 
